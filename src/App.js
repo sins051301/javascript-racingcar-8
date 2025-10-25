@@ -3,6 +3,7 @@ import saveCarNames from "./save-car-names.js";
 import validateCarNames from "./validate-car-names.js";
 import validateTryCount from "./validate-try-count.js";
 import raceCar from "./race-car.js";
+import getWinnerCars from "./get-winner-cars.js";
 
 class App {
   async run() {
@@ -20,7 +21,7 @@ class App {
       MissionUtils.Console.print("실행 결과");
       raceCar(carNames, tryCount);
 
-      MissionUtils.Console.print(`결과 : ${carNames}`);
+      getWinnerCars(carNames);
     } catch (error) {
       MissionUtils.Console.print(error.message);
       throw error;
