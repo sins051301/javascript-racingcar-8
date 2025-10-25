@@ -18,9 +18,7 @@ class App {
         "시도할 횟수는 몇 회인가요?"
       );
       const tryCountNumber = validateTryCount(tryCount);
-      MissionUtils.Console.print("실행 결과");
       raceCar(carNames, tryCountNumber);
-
       getWinnerCars(carNames);
     } catch (error) {
       MissionUtils.Console.print(error.message);
