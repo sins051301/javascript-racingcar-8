@@ -10,6 +10,11 @@ class App {
       );
       const inputArray = validateCarNames(input);
       const carNames = saveCarNames(inputArray);
+
+      const tryCount = await MissionUtils.Console.readLineAsync(
+        "시도할 횟수를 입력하세요."
+      );
+      
       MissionUtils.Console.print(`결과 : ${carNames}`);
     } catch (error) {
       MissionUtils.Console.print(error.message);
