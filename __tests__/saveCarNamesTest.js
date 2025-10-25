@@ -1,4 +1,4 @@
-import saveCarNames from "../src/save-car-names.js";
+import saveCarNames from "../src/input/save-car-names.js";
 import Car from "../src/car.js";
 
 describe("saveCarNames", () => {

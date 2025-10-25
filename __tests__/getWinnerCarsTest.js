@@ -1,5 +1,5 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import getWinnerCars from "../src/get-winner-cars.js";
+import getWinnerCars from "../src/result/get-winner-cars.js";
 
 describe("getWinnerCars", () => {
   beforeEach(() => {

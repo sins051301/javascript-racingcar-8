@@ -1,9 +1,9 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import saveCarNames from "./save-car-names.js";
-import validateCarNames from "./validate-car-names.js";
-import validateTryCount from "./validate-try-count.js";
-import raceCar from "./race-car.js";
-import getWinnerCars from "./get-winner-cars.js";
+import saveCarNames from "./input/save-car-names.js";
+import validateCarNames from "./input/validate-car-names.js";
+import validateTryCount from "./input/validate-try-count.js";
+import raceCar from "./race/race-car.js";
+import getWinnerCars from "./result/get-winner-cars.js";
 
 class App {
   async run() {

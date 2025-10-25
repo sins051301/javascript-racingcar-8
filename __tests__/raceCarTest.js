@@ -1,5 +1,5 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import raceCar from "../src/race-car.js";
+import raceCar from "../src/race/race-car.js";
 import Car from "../src/car.js";
 
 describe("raceCar", () => {

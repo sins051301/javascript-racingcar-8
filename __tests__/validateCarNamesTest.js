@@ -1,4 +1,4 @@
-import validateCarNames from "../src/validate-car-names.js";
+import validateCarNames from "../src/input/validate-car-names.js";
 
 describe("validateCarNames", () => {
   test.each([

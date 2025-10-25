@@ -1,4 +1,4 @@
-import validateTryCount from "../src/validate-try-count.js";
+import validateTryCount from "../src/input/validate-try-count.js";
 
 describe("validateTryCount", () => {
   test.each([1, 3, 10])("정상 입력: %s", (count) => {
