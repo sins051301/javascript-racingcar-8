@@ -10,14 +10,14 @@ function validateCarNames(input) {
   if (/, {0,}\,+/.test(input)) {
     throw new Error("[ERROR] 쉼표는 연속해서 사용할 수 없습니다.");
   }
-  const carNames = input.split(",").map((name) => name.trim());
+  const inputArray = input.split(",").map((name) => name.trim());
 
-  const isValid = carNames.every((name) => name.length > 0 && name.length <= 5);
+  const isValid = inputArray.every((name) => name.length > 0 && name.length <= 5);
   if (!isValid) {
     throw new Error("[ERROR] 자동차 이름은 1~5글자 사이여야 합니다.");
   }
 
-  return carNames;
+  return inputArray;
 }
 
 export default validateCarNames;
