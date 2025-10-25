@@ -1,6 +1,7 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
 import saveCarNames from "./save-car-names.js";
 import validateCarNames from "./validate-car-names.js";
+import validateTryCount from "./validate-try-count.js";
 
 class App {
   async run() {
@@ -14,7 +15,9 @@ class App {
       const tryCount = await MissionUtils.Console.readLineAsync(
         "시도할 횟수를 입력하세요."
       );
-      
+
+      validateTryCount(tryCount);
+
       MissionUtils.Console.print(`결과 : ${carNames}`);
     } catch (error) {
       MissionUtils.Console.print(error.message);
