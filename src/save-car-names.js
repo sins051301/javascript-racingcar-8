@@ -1,5 +1,5 @@
-function saveCarNames(carNames) {
-    const carNames = carNames.split(",");
+function saveCarNames(inputCarNames) {
+    const carNames = inputCarNames.split(",");
     return carNames;
 }
 
