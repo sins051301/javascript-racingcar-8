@@ -12,6 +12,7 @@ function moveCars(cars) {
 }
 
 function printRaceState(cars) {
+  MissionUtils.Console.print("실행 결과");
   cars.forEach((car) => {
     MissionUtils.Console.print(`${car.name} : ${car.getTrack()}`);
   });
