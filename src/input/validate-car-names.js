@@ -12,7 +12,15 @@ function validateCarNames(input) {
   }
   const inputArray = input.split(",").map((name) => name.trim());
 
-  const isValid = inputArray.every((name) => name.length > 0 && name.length <= 5);
+  if (inputArray.length <= 1) {
+    throw new Error(
+      "[ERROR] 자동차가 두대 이상이어야 경주를 시작할 수 있습니다."
+    );
+  }
+
+  const isValid = inputArray.every(
+    (name) => name.length > 0 && name.length <= 5
+  );
   if (!isValid) {
     throw new Error("[ERROR] 자동차 이름은 1~5글자 사이여야 합니다.");
   }
