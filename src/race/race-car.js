@@ -1,7 +1,7 @@
-import { MissionUtils } from "@woowacourse/mission-utils";
+import { Console } from "@woowacourse/mission-utils";
 
 function raceCar(cars, tryCount) {
-  MissionUtils.Console.print("실행 결과");
+  Console.print("실행 결과");
   for (let i = 0; i < tryCount; i++) {
     moveCars(cars);
     printRaceState(cars);
@@ -14,9 +14,9 @@ function moveCars(cars) {
 
 function printRaceState(cars) {
   cars.forEach((car) => {
-    MissionUtils.Console.print(`${car.name} : ${car.getTrack()}`);
+    Console.print(`${car.name} : ${car.getTrack()}`);
   });
-  MissionUtils.Console.print("");
+  Console.print("");
 }
 
 export default raceCar;

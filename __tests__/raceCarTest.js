@@ -1,10 +1,10 @@
-import { MissionUtils } from "@woowacourse/mission-utils";
+import { Console } from "@woowacourse/mission-utils";
 import raceCar from "../src/race/race-car.js";
 import Car from "../src/car.js";
 
 describe("raceCar", () => {
   beforeEach(() => {
-    jest.spyOn(MissionUtils.Console, "print").mockImplementation(() => {});
+    jest.spyOn(Console, "print").mockImplementation(() => {});
   });
 
   afterEach(() => {

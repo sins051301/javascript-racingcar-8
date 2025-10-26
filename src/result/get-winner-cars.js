@@ -1,4 +1,4 @@
-import { MissionUtils } from "@woowacourse/mission-utils";
+import { Console } from "@woowacourse/mission-utils";
 
 function getWinnerCars(cars) {
   const winners = findWinnerNames(cars);
@@ -18,7 +18,7 @@ function findWinnerNames(cars) {
 
 function printWinners(winners) {
   const winnerNames = winners.join(", ");
-  MissionUtils.Console.print(`최종 우승자 : ${winnerNames}`);
+  Console.print(`최종 우승자 : ${winnerNames}`);
 }
 
 export default getWinnerCars;

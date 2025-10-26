@@ -1,9 +1,9 @@
-import { MissionUtils } from "@woowacourse/mission-utils";
+import { Console } from "@woowacourse/mission-utils";
 import getWinnerCars from "../src/result/get-winner-cars.js";
 
 describe("getWinnerCars", () => {
   beforeEach(() => {
-    jest.spyOn(MissionUtils.Console, "print").mockImplementation(() => {});
+    jest.spyOn(Console, "print").mockImplementation(() => {});
   });
 
   afterEach(() => {
@@ -19,9 +19,7 @@ describe("getWinnerCars", () => {
 
     getWinnerCars(cars);
 
-    expect(MissionUtils.Console.print).toHaveBeenCalledWith(
-      "최종 우승자 : pobi"
-    );
+    expect(Console.print).toHaveBeenCalledWith("최종 우승자 : pobi");
   });
 
   test("여러 우승자를 쉼표로 구분하여 출력한다", () => {
@@ -33,8 +31,6 @@ describe("getWinnerCars", () => {
 
     getWinnerCars(cars);
 
-    expect(MissionUtils.Console.print).toHaveBeenCalledWith(
-      "최종 우승자 : pobi, woni"
-    );
+    expect(Console.print).toHaveBeenCalledWith("최종 우승자 : pobi, woni");
   });
 });
