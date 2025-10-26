@@ -1,6 +1,7 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
 
 function raceCar(cars, tryCount) {
+  MissionUtils.Console.print("실행 결과");
   for (let i = 0; i < tryCount; i++) {
     moveCars(cars);
     printRaceState(cars);
@@ -12,7 +13,6 @@ function moveCars(cars) {
 }
 
 function printRaceState(cars) {
-  MissionUtils.Console.print("실행 결과");
   cars.forEach((car) => {
     MissionUtils.Console.print(`${car.name} : ${car.getTrack()}`);
   });
