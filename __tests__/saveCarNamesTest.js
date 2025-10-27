@@ -13,18 +13,18 @@ describe("saveCarNames", () => {
     });
   });
 
-  // test("중복된 이름이 있을 경우 숫자를 붙여 고유 이름을 생성한다", () => {
-  //   const input = ["pobi", "woni", "pobi", "pobi", "woni"];
+  test("중복된 이름이 있을 경우 숫자를 붙여 고유 이름을 생성한다", () => {
+    const input = ["pobi", "woni", "pobi", "pobi", "woni"];
 
-  //   const cars = saveCarNames(input);
+    const cars = saveCarNames(input);
 
-  //   expect(cars).toHaveLength(5);
-  //   expect(cars.map((c) => c.name)).toEqual([
-  //     "pobi",
-  //     "woni",
-  //     "pobi2",
-  //     "pobi3",
-  //     "woni2",
-  //   ]);
-  // });
+    expect(cars).toHaveLength(5);
+    expect(cars.map((c) => c.name)).toEqual([
+      "pobi",
+      "woni",
+      "pobi2",
+      "pobi3",
+      "woni2",
+    ]);
+  });
 });
