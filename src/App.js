@@ -22,7 +22,6 @@ class App {
       getWinnerCars(carNames);
     } catch (error) {
       Console.print(error.message);
-      throw error;
     }
   }
 }
