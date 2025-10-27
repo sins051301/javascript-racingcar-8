@@ -1,7 +1,7 @@
 import { Console } from "@woowacourse/mission-utils";
 
 function raceCar(cars, tryCount) {
-  Console.print("실행 결과");
+  Console.print("\n실행 결과");
   for (let i = 0; i < tryCount; i++) {
     moveCars(cars);
     printRaceState(cars);
