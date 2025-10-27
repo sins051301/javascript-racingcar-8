@@ -16,12 +16,12 @@ function createUniqueName(name, nameCount) {
 }
 
 function saveCarNames(inputArray) {
-  const nameCount = {};
+  // const nameCount = {};
 
   const cars = inputArray.map((name) => {
-    const uniqueName = createUniqueName(name, nameCount);
+    // const uniqueName = createUniqueName(name, nameCount);
 
-    return new Car(uniqueName);
+    return new Car(name);
   });
 
   return cars;
